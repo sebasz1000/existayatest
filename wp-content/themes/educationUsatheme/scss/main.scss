@@ -1,0 +1,37 @@
+/*
+Theme Name: Education USA
+Author: Juan Sebastián Zapata
+Version: 1.0
+*/
+
+/* Mixin for custom theme font */
+
+@mixin font-face($family) {
+  @font-face {
+    font-family: $family;
+    font-style: normal;
+    src: url("./fonts/"+$family+".ttf") format("truetype"),
+      url("./fonts/"+$family+".woff2") format("woff2"),
+      url("./fonts/"+$family+".woff") format("woff");
+  }
+}
+
+@include font-face(Rubik-Regular);
+@include font-face(Rubik-Bold);
+
+/* Overide variables for custom site theme */
+
+$font-family-sans-serif: Rubik-Regular, Arial, sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+$theme-colors: (
+  "primary": #284a9f
+);
+
+@import "bootstrap-4.3.1/scss/bootstrap";
+
+main {
+  h1 {
+    color: black;
+  }
+}
