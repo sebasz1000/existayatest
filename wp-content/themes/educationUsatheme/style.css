@@ -7714,6 +7714,27 @@ a.text-dark-grey:hover, a.text-dark-grey:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+/* custom utilities */
+h1,
+.h1 {
+  font-size: 3rem !important; }
+
+.bg-light {
+  background-color: #f7f7f7 !important; }
+
+.top-0 {
+  top: 0; }
+
+.right-0 {
+  right: 0; }
+
+.pr-6 {
+  padding-right: 5.2rem !important; }
+
+.py-8 {
+  padding-bottom: 6rem !important;
+  padding-top: 6rem !important; }
+
 .icon.small {
   font-size: 14px; }
 
@@ -7725,6 +7746,12 @@ a.text-dark-grey:hover, a.text-dark-grey:focus {
 
 .border-right.border-2 {
   border-right: 2px solid #dee2e6 !important; }
+
+.border-8 {
+  border-width: 8px; }
+
+.bold-text {
+  font-family: Rubik-Medium; }
 
 /* HEADER  */
 #site-header.container {
