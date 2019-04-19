@@ -9,10 +9,10 @@
     <body <?php body_class(); ?>>
         <header id="site-header" class="container">
         <div class="row">
-            <div id="main-logo" class="col-1 d-flex align-items-center justify-content-center pr-2">
+            <div id="main-logo" class="col-3 col-xs-2 col-md-3 col-lg-2 d-flex align-items-center justify-content-center pr-2">
                 <a href="<?php echo home_url(); ?>"><img src="<?php echo wp_upload_dir('2019/04')['url']; ?>/education-usa-logo.png" width="75%"></a>
             </div>
-            <div class="col-11 p-0">
+            <div class="col-9 col-xs-10 col-md-9 col-lg-10 p-0">
 
               <ul class="nav d-flex justify-content-end" id="top-menu">
                 <li><small><i class="icon ion-ios-call medium mr-2" ></i>PBX (+57) (2) 485 0110</small></li>

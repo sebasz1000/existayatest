@@ -27,7 +27,11 @@ $font-family-base: $font-family-sans-serif;
 
 $theme-colors: (
   "primary": #284a9f,
-  "dark-grey": #333333
+  "dark-grey": #333333,
+  "gray-200": #f6f6f6,
+  "gray-300": #ededed,
+  "gray-400": #dadada,
+  "gray-500": #c7c6c6
 );
 
 @import "bootstrap-4.3.1/scss/bootstrap";
@@ -79,6 +83,22 @@ h1,
   font-family: Rubik-Medium;
 }
 
+/*gray scales color custom */
+
+.bg-gray-200 {
+  background-color: theme-color("$gray-200");
+}
+
+.bg-gray-300 {
+  background-color: theme-color("$gray-300");
+}
+
+.bg-gray-400 {
+  background-color: theme-color("$gray-400");
+}
+.bg-gray-500 {
+  background-color: theme-color("$gray-500");
+}
 /* HEADER  */
 
 #site-header.container {
@@ -87,6 +107,11 @@ h1,
 }
 #main-logo {
   border-right: 1px solid #cccccc;
+
+  img {
+    max-width: 240px;
+    min-width: 134px;
+  }
 }
 
 ul#top-menu {
@@ -126,6 +151,15 @@ button#header-search-btn {
 article#main-article {
   max-width: 800px;
   padding-left: 6%;
+}
+
+article#mcer {
+  font-size: 0.84rem;
+  ul {
+    list-style: none;
+
+    line-height: 1.8em;
+  }
 }
 /* FOOTER */
 
