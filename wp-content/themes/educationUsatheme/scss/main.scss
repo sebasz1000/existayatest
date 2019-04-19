@@ -17,6 +17,7 @@ Version: 1.0
 }
 
 @include font-face(Rubik-Regular);
+@include font-face(Rubik-Medium);
 @include font-face(Rubik-Bold);
 
 /* Overide variables for custom site theme */
@@ -25,13 +26,91 @@ $font-family-sans-serif: Rubik-Regular, Arial, sans-serif;
 $font-family-base: $font-family-sans-serif;
 
 $theme-colors: (
-  "primary": #284a9f
+  "primary": #284a9f,
+  "dark-grey": #333333
 );
 
 @import "bootstrap-4.3.1/scss/bootstrap";
 
-main {
-  h1 {
-    color: black;
+.icon.small {
+  font-size: 14px;
+}
+
+.icon.medium {
+  font-size: 18px;
+}
+
+.icon.large {
+  font-size: 24px;
+}
+
+.border-right.border-2 {
+  border-right: 2px solid #dee2e6 !important;
+}
+
+/* HEADER  */
+
+#site-header.container {
+  border-bottom: 1px solid #cccccc;
+  max-width: none !important;
+}
+#main-logo {
+  border-right: 1px solid #cccccc;
+}
+
+ul#top-menu {
+  border-bottom: 1px solid #cccccc;
+  color: #797979;
+  li {
+    padding: 4px 16px;
+    border-right: 1px solid #cccccc;
+    a {
+      color: #797979;
+    }
+  }
+}
+
+#main-menu ul {
+  margin-left: 140px;
+  li a {
+    font-family: Rubik-Medium;
+    color: theme-color("dark-grey");
+    &:hover {
+      color: theme-color(primary);
+    }
+  }
+}
+
+button#header-search-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+}
+/* LANDING PAGE CONTENT */
+
+article#main-article {
+  max-width: 800px;
+  padding-left: 6%;
+}
+/* FOOTER */
+
+footer {
+  color: #797979;
+  ul.nav li {
+    padding: 0 8px;
+    font-family: Rubik-Medium;
+    a {
+      color: #797979;
+    }
+  }
+  #logos div {
+    max-width: 120px;
+    img {
+      width: 100%;
+    }
   }
 }
