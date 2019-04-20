@@ -8169,7 +8169,24 @@ h1,
 .bold-text {
   font-family: Rubik-Medium; }
 
+.extrabold-text {
+  font-family: Rubik-Bold; }
+
+ul.red-bullet {
+  list-style: none; }
+  ul.red-bullet li {
+    line-height: 1.4em; }
+  ul.red-bullet li:before {
+    content: "\2022";
+    color: #cb1e2c;
+    font-weight: bold;
+    font-size: 1.6em;
+    margin-right: 1em; }
+
 /*gray scales color custom */
+.text-500 {
+  color: #c7c6c6; }
+
 /* HEADER  */
 #site-header.container {
   border-bottom: 1px solid #cccccc;
@@ -8217,6 +8234,20 @@ article#mcer {
   article#mcer ul {
     list-style: none;
     line-height: 1.8em; }
+
+/* Overrides styles for card with tabs */
+.nav-tabs .nav-item a.nav-link {
+  color: #dadada !important; }
+  .nav-tabs .nav-item a.nav-link:hover {
+    border: none !important;
+    color: #c7c6c6 !important; }
+.nav-tabs .nav-item a.nav-link.active {
+  border: none;
+  border-bottom: 2px solid #284a9f;
+  color: #284a9f !important; }
+
+.nav-tabs.nav-secondary .nav-item a.nav-link.active {
+  font-family: Rubik-Medium; }
 
 /* FOOTER */
 footer {
