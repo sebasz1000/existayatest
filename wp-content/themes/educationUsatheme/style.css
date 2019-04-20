@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Theme Name: Education USA
+Theme Name: Education USA Theme
 Author: Juan Sebastián Zapata
 Version: 1.0
 */
@@ -8215,10 +8215,17 @@ ul#top-menu {
     #main-menu ul li a:hover {
       color: #284a9f; }
 
+#main-menu.show {
+  margin-top: 40px;
+  background-color: #f6f6f6; }
+  #main-menu.show ul {
+    margin: 0 !important; }
+
 button#header-search-btn {
   position: absolute;
   right: 0;
   top: 0;
+  max-height: 84px;
   transform: scaleX(-1);
   -moz-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);

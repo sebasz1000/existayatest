@@ -23,8 +23,9 @@
 
     <!-- SECOND ARTICLE -->
     <article class="container my-5 ">
-        <h3 class="text-primary mb-5 text-center">Con nuestro programa de Inglés podrás:</h3>
-        <div class="card w-100 rounded-0">
+        <div class="container-fluid bg-light w-100 h-50 position-absolute" style="left:0;"></div>
+        <h3 class="text-primary mb-5 pt-5 text-center position-relative">Con nuestro programa de Inglés podrás:</h3>
+        <div class="card w-100 rounded-0" style="min-height:624px;">
             <div class="card-body px-0 pt-0">
                 <ul class="nav nav-tabs d-flex justify-content-around align-items-end" id="levels-tab" role="tablist">
                     <li class="nav-item w-25 text-center">
@@ -60,8 +61,10 @@
                             <div class="tab-pane fade show active" id="fundamental-content" role="tabpanel" aria-labelledby="fundamental-tab">
                                 <div class="container">
                                     <div class="row d-flex">
-                                        <div class="col-md-5 order-1">
-                                            <h4 class="extrabold-text mt-5">Fundamental</h4>
+                                        <div class="col-md-5 order-1 pt-4">
+                                        <a  style="color: #cb1e2c;" href=""><i class="icon ion-md-arrow-back large mr-4" ></i></a>
+                                        <a style="color: #cb1e2c;"  href=""><i class="icon ion-md-arrow-forward large ml-4" ></i></a>
+                                            <h4 class="extrabold-text mt-3 ">Fundamental</h4>
                                             <ul class="pl-3 mt-4 red-bullet">
                                                 <li >Dar Información personal.</li>
                                                 <li >Ir de compras.</li>
@@ -78,8 +81,8 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
+                            <div class="tab-pane fade show active" id="fundamentalplus-content" role="tabpanel" aria-labelledby="fundamentalplus-tab"></div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="level2" role="tabpanel" aria-labelledby="level2-tab"></div>
@@ -177,7 +180,7 @@
                 </div>
             </div>
         </div><!--container -->
-        <div class="w-50 position-absolute h-100 top-0 right-0" style="background: url(<?php echo wp_upload_dir('2019/04')['url']; ?>/front-page-main-img.png);
+        <div class="w-50 position-absolute h-100 top-0 right-0" style="background: url(<?php echo wp_upload_dir('2019/04')['url']; ?>/students-img.png);
                                         background-size: cover;"></div>
     </article><!-- container-fluid -->
 </main>

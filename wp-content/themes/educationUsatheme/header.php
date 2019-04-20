@@ -23,19 +23,25 @@
               </ul>
                
             <div class="position-relative  py-2  d-flex ">
-                <?php 
-                $args = array(
-                    'theme-location' => 'primary',
-                    'menu_class' => 'nav',
-                    'container_id' => 'main-menu'
+                <div class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="icon ion-ios-menu large" style="font-size:2em;"></i>    
+                    </button>
+                    <?php 
+                    $args = array(
+                        'theme-location' => 'primary',
+                        'menu_class' => 'nav',
+                        'container_id' => 'main-menu',
+                        'container_class' => 'collapse navbar-collapse'
 
-                    
-                );
-                wp_nav_menu( $args ); 
-                ?>
-             <button id="header-search-btn" type="button" class="btn btn-primary rounded-0 h-100 px-4">
-             <i class="icon ion-ios-search large" ></i>
-                </button>
+                        
+                    );
+                    wp_nav_menu( $args ); 
+                    ?>
+                </div>
+                <button id="header-search-btn" type="button" class="btn btn-primary rounded-0 h-100 px-4">
+                <i class="icon ion-ios-search large" ></i>
+                    </button>
             </div>
            
             </div>
